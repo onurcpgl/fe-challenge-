@@ -1,11 +1,19 @@
-import { BrowserRouter } from 'react-router-dom'
-import AppRoute from './routes/AppRoute'
-import './App.css'
+import { BrowserRouter } from "react-router-dom";
+import AppRoute from "./routes/AppRoute";
+import "./App.css";
+import ErrorBoundary from "./components/Error/ErrorBoundary";
+import { QueryClient, QueryClientProvider } from "react-query";
 
 function App() {
+  const queryClient = new QueryClient();
+
   return (
     <BrowserRouter>
-      <AppRoute />
+      <ErrorBoundary>
+        <QueryClientProvider client={queryClient}>
+          <AppRoute />
+        </QueryClientProvider>
+      </ErrorBoundary>
     </BrowserRouter>
   );
 }

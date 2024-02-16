@@ -1,5 +1,5 @@
 import React from "react";
-import WhiteLogo from "../assets/header_logo.svg";
+
 import { FaInstagram, FaLinkedin, FaFacebookF } from "react-icons/fa";
 function Footer() {
   return (
@@ -10,7 +10,7 @@ function Footer() {
             <div className="flex flex-col justify-between items-start w-2/6 max-lg:w-3/6 max-md:w-4/6 h-full">
               <div className="select-none">
                 <a href="/">
-                  <img src={WhiteLogo} alt="Footer White Logo" />
+                  <img src="" alt="Footer White Logo" />
                 </a>
                 <p className="text text-sm font-light">
                   Trusted Global Innovator

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import DarkLogo from "../assets/header_logo_dark.svg";
 import { IoSearch } from "react-icons/io5";
 import { MdKeyboardArrowDown } from "react-icons/md";
 function Header() {
@@ -72,7 +71,7 @@ function Header() {
     <nav className="relative top-0 h-36 flex items-center flex-col">
       <div className="container mx-auto flex justify-start items-center gap-3 h-2/4">
         <a href="/">
-          <img src={DarkLogo} alt="Logo" />
+          <img src="" alt="Logo" />
         </a>
         <div className="relative w-2/4 h-10">
           <input
