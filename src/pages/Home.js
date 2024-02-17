@@ -1,20 +1,20 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useQuery } from "react-query";
 import generalService from "../services/GeneralService";
 import Loading from "../components/Loading/Loading";
 import ProductCard from "../components/ProductCard/ProductCard";
+import HomeSlider from "../components/Home/HomeSlider";
 function Home() {
   const { data, isLoading, error } = useQuery(
     "users",
     generalService.getProducts
   );
-  useEffect(() => {
-    console.log(data);
-  }, [data]);
+
   return isLoading ? (
     <Loading />
   ) : (
     <div className="relative">
+      <HomeSlider />
       <div className="container mx-auto my-10">
         <div className="flex justify-between items-center">
           <p className="text-3xl font-semibold">Content title goes here</p>

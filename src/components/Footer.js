@@ -1,16 +1,16 @@
 import React from "react";
-
+import WhiteLogo from "../assets/header_logo.svg";
 import { FaInstagram, FaLinkedin, FaFacebookF } from "react-icons/fa";
 function Footer() {
   return (
-    <footer className="relative bottom-0 left-0 w-full  bg-[#0059BC] text-white aspect-1440/401  max-lg:aspect-768/401 ">
+    <footer className="relative bottom-0 left-0 w-full  bg-[#0059BC] text-white aspect-1440/401  max-lg:aspect-768/401 max-[500px]:h-64">
       <div className="flex flex-col justify-between items-start w-full h-full">
         <div className="container mx-auto flex flex-col justify-between w-full h-5/6">
           <div className="flex justify-between items-start w-full h-full py-16 max-xl:py-8 max-lg:px-4 max-lg:gap-8 max-md:py-10">
-            <div className="flex flex-col justify-between items-start w-2/6 max-lg:w-3/6 max-md:w-4/6 h-full">
+            <div className="flex flex-col justify-between items-start w-2/6 max-lg:w-3/6 max-md:w-4/6 h-full max-sm:w-5/6">
               <div className="select-none">
                 <a href="/">
-                  <img src="" alt="Footer White Logo" />
+                  <img src={WhiteLogo} alt="Footer White Logo" />
                 </a>
                 <p className="text text-sm font-light">
                   Trusted Global Innovator
@@ -25,7 +25,7 @@ function Footer() {
                   className="w-9/12 max-lg:w-8/12 px-5 text-black email font-normal"
                   placeholder="Email"
                 />
-                <button className="w-3/12 max-lg:w-4/12 bg-[#00254F] pl-4">
+                <button className="w-3/12 max-lg:w-4/12 bg-[#00254F] pl-4 max-sm:pl-2">
                   Sign Up
                 </button>
               </div>
@@ -34,55 +34,55 @@ function Footer() {
             <div className="w-3/6 h-full flex justify-center items-center max-md:hidden">
               <div className="flex justify-evenly w-full max-lg:flex-col">
                 <ul className="flex flex-col">
-                  <th className="text-2xl font-medium mb-5 text-start">
+                  <li className="text-2xl font-medium mb-5 text-start">
                     Title
-                  </th>
-                  <td className="text-xl font-normal py-1 max-lg:hidden">
+                  </li>
+                  <li className="text-xl font-normal py-1 max-lg:hidden">
                     Subtitle
-                  </td>
-                  <td className="text-xl font-normal py-1 max-lg:hidden">
+                  </li>
+                  <li className="text-xl font-normal py-1 max-lg:hidden">
                     Subtitle
-                  </td>
-                  <td className="text-xl font-normal py-1 max-lg:hidden">
+                  </li>
+                  <li className="text-xl font-normal py-1 max-lg:hidden">
                     Subtitle
-                  </td>
-                  <td className="text-xl font-normal py-1 max-lg:hidden">
+                  </li>
+                  <li className="text-xl font-normal py-1 max-lg:hidden">
                     Subtitle
-                  </td>
+                  </li>
                 </ul>
                 <ul className="flex flex-col">
-                  <th className="text-2xl font-medium mb-5 text-start">
+                  <li className="text-2xl font-medium mb-5 text-start">
                     Title
-                  </th>
-                  <td className="text-xl font-normal py-1 max-lg:hidden">
+                  </li>
+                  <li className="text-xl font-normal py-1 max-lg:hidden">
                     Subtitle
-                  </td>
-                  <td className="text-xl font-normal py-1 max-lg:hidden">
+                  </li>
+                  <li className="text-xl font-normal py-1 max-lg:hidden">
                     Subtitle
-                  </td>
-                  <td className="text-xl font-normal py-1 max-lg:hidden">
+                  </li>
+                  <li className="text-xl font-normal py-1 max-lg:hidden">
                     Subtitle
-                  </td>
-                  <td className="text-xl font-normal py-1 max-lg:hidden">
+                  </li>
+                  <li className="text-xl font-normal py-1 max-lg:hidden">
                     Subtitle
-                  </td>
+                  </li>
                 </ul>
                 <ul className="flex flex-col">
-                  <th className="text-2xl font-medium mb-5 text-start">
+                  <li className="text-2xl font-medium mb-5 text-start">
                     Title
-                  </th>
-                  <td className="text-xl font-normal py-1 max-lg:hidden">
+                  </li>
+                  <li className="text-xl font-normal py-1 max-lg:hidden">
                     Subtitle
-                  </td>
-                  <td className="text-xl font-normal py-1 max-lg:hidden">
+                  </li>
+                  <li className="text-xl font-normal py-1 max-lg:hidden">
                     Subtitle
-                  </td>
-                  <td className="text-xl font-normal py-1 max-lg:hidden">
+                  </li>
+                  <li className="text-xl font-normal py-1 max-lg:hidden">
                     Subtitle
-                  </td>
-                  <td className="text-xl font-normal py-1 max-lg:hidden">
+                  </li>
+                  <li className="text-xl font-normal py-1 max-lg:hidden">
                     Subtitle
-                  </td>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -93,9 +93,9 @@ function Footer() {
           <div className="container mx-auto w-full h-full flex justify-between items-center max-lg:px-4">
             <a
               className="text-xl font-normal max-md:text-base"
-              href="mailto:contact@nttdata.com"
+              href="mailto:contact@ntliata.com"
             >
-              contact@nttdata.com
+              contact@ntliata.com
             </a>
             <a
               className="text-xl font-normal  max-md:text-base"
@@ -108,7 +108,7 @@ function Footer() {
                 <FaInstagram className="text-2xl font-normal" />
               </a>
               <a
-                href="https://www.facebook.com/NTTDATABusinessSolutionsTurkey/"
+                href="https://www.facebook.com/NTliATABusinessSolutionsTurkey/"
                 target="blank"
               >
                 <FaFacebookF className="text-2xl font-normal" />
