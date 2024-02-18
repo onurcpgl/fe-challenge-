@@ -86,15 +86,24 @@ function Home() {
         </div>
 
         {likedProductsModal ? (
-          <div className="flex flex-wrap">
-            {likedProducts.length > 0 ? (
-              likedProducts
-                ?.slice(0, likedDataSlice)
-                .map((item, i) => <ProductCard key={i} data={item} />)
-            ) : (
-              <p>Beğenilen herhangi bir ürün yok!</p>
-            )}
-          </div>
+          <>
+            <div className="flex flex-wrap max-[550px]:hidden">
+              {likedProducts.length > 0 ? (
+                likedProducts
+                  ?.slice(0, likedDataSlice)
+                  .map((item, i) => <ProductCard key={i} data={item} />)
+              ) : (
+                <p>Beğenilen herhangi bir ürün yok!</p>
+              )}
+            </div>
+            <div className="hidden max-[550px]:block">
+              <Slider {...settings}>
+                {likedProducts?.map((item, i) => (
+                  <ProductCard key={i} data={item} />
+                ))}
+              </Slider>
+            </div>
+          </>
         ) : (
           <>
             <div className="flex flex-wrap max-[550px]:hidden">

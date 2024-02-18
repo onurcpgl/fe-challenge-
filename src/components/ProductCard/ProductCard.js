@@ -1,10 +1,7 @@
 import { useNavigate } from "react-router";
 import { FaRegHeart } from "react-icons/fa";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  addLikedProduct,
-  deleteLikedProduct,
-} from "../../redux/features/liked/likedSlice";
+import { addLikedProduct } from "../../redux/features/liked/likedSlice";
 import { useState } from "react";
 import { useEffect } from "react";
 function ProductCard({ data }) {
