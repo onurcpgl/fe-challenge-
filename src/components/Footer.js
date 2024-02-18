@@ -1,4 +1,3 @@
-import React from "react";
 import WhiteLogo from "../assets/header_logo.svg";
 import { FaInstagram, FaLinkedin, FaFacebookF } from "react-icons/fa";
 function Footer() {

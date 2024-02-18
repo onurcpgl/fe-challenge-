@@ -1,4 +1,3 @@
-import React from "react";
 import LoadingSvg from "../../assets/Loading/Loading.svg";
 function Loading() {
   return (

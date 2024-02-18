@@ -1,5 +1,3 @@
-import React from "react";
-
 function CategoryModal({
   setMobilCategoryModal,
   categoriesData,
@@ -12,7 +10,7 @@ function CategoryModal({
   return (
     <div className="w-full h-full absolute top-0 left-0 bg-white z-[999999999]">
       <button
-        className="absolute top-2 right-2"
+        className="absolute top-2 right-2 text-2xl font-medium"
         onClick={() => setMobilCategoryModal(false)}
       >
         X

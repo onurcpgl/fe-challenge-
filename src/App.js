@@ -3,7 +3,8 @@ import AppRoute from "./routes/AppRoute";
 import "./App.css";
 import ErrorBoundary from "./components/Error/ErrorBoundary";
 import { QueryClient, QueryClientProvider } from "react-query";
-
+import { Provider } from "react-redux";
+import { store } from "./redux/app/store";
 function App() {
   const queryClient = new QueryClient();
 
@@ -11,7 +12,9 @@ function App() {
     <BrowserRouter>
       <ErrorBoundary>
         <QueryClientProvider client={queryClient}>
-          <AppRoute />
+          <Provider store={store}>
+            <AppRoute />
+          </Provider>
         </QueryClientProvider>
       </ErrorBoundary>
     </BrowserRouter>
